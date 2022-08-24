@@ -1,46 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="./img.jpg" />
-  <link rel="stylesheet" href="./style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Anthony Vu</title>
-</head>
-
-<body>
-  <div class="front-page">
-    <div class="intro-text">
-      <h1 class="title">Anthony Vu</h1>
-      <h2 class="sub-title">
-        Schulich Leader & Computer Science Co-op @ McMaster University
-      </h2>
-      <br>
-      <a href="mailto:vua11@mcmaster.ca" target="_blank"><i class="fa fa-envelope sub-title"
-          style="font-size:24px; color:white"></i></a>
-      <a href="https://www.linkedin.com/in/vua11/" target="_blank"><i class="fa fa-linkedin sub-title"
-          style="font-size:24px; color:white"></i></a>
-      <a href="https://github.com/vua11" target="_blank"><i class="fa fa-github sub-title"
-          style="font-size:24px; color:white"></i></a>
-    </div>
-    <img class="music-note" src="./volume.svg" alt="" />
-    <div class="blend"></div>
-    <video autoplay loop muted playsinline src="./video.mp4"></video>
-  </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
-    integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"
-    integrity="sha512-CPA5LMoJI/a5HkSIAKcBtFXe4gqGjPUL2ExF/3PmhrrHI17wod9xOqqF+0WZQRKIIq0KwF8oG5BaiWobtrke3A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="./app.js"></script>
-</body>
-
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Anthony Vu</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles/main.css">
+        <link rel="stylesheet" href="" id="theme-css">
+    </head>
+    <body>
+        <div id="container--main">
+            <section id="wrapper--hero" class="section--page">
+                <img id="profile-pic" src="./assets/anthony-vu-profile.jpg">
+                <div>
+                    <h1 id="user-name">Anthony Vu</h1>
+                    <p id="bio">3rd-year Computer Science Co-op @ McMaster University and <a href="https://www.eng.mcmaster.ca/spotlight/undergraduate-student/anthony-vu/" target="_blank">Schulich Leader</a>.</p>
+                    <p id="email">👉 vua11@mcmaster.ca</p>
+                    <button id="themeLight" class="themeBtn">Light</button>
+                    <button id="themeDark" class="themeBtn">Dark</button>
+                </div>  
+            </section>
+            <section class="section--page">
+                <div id="socials--list">
+                    <a href="https://www.linkedin.com/in/vua11/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/vua11/" target="_blank">GitHub</a>
+                    <a href="./assets/anthony-vu-resume.pdf" target="_blank">Download Resume</a>
+                </div>
+            </section>
+            <section class="section--page">
+                <h2>Skills & Qualifications</h2>
+                <ul id="qualifications--list">
+                    <li>✔️ 2 years of experience with front-end & back-end development</li>
+                    <li>✔️ Strong background in app development and machine learning</li>
+                    <li>✔️ Courses on operating systems, compilers, threads, and databases</li>
+                    <li>✔️ Self-learning cybersecurity, ethical hacking, and robotics</li>
+                </ul>
+            </section>
+            <section class="section--page">
+                <h2>Technology Stacks</h2>
+                <div id="wrapper--techstack__items">
+                    <div class="card--techstack"><span>ASP.NET, Angular, TypeScript, C#</span></div>
+                    <div class="card--techstack"><span>Python, Pandas, SQL</span></div>
+                    <div class="card--techstack"><span>Laravel, PHP, Blade</span></div>
+                    <div class="card--techstack"><span>MongoDB, Express, React, Node, GraphQL, Apollo Client</span></div>
+                    <div class="card--techstack"><span>JavaScript, Tailwind</span></div>
+                </div>
+            </section>
+            <section id="work-history-wrapper" class="section--page">
+                <h2>Work History</h2>
+                <div class="line-break"></div>
+                <div class="card--work-history">
+                    <strong>🚧 FULL-STACK DEVELOPER INTERN | BDO CANADA LLP</strong>
+                    <p>05/2022 - 08/2022</p>
+                    <ul>
+                        <li>Worked on ResourceMe, a tool that partners use to manage allocations, that has 7000+ daily active users</li>
+                        <li>Resolved 25+ bugs in the front-end and back-end using ASP.NET, Angular, TypeScript, SQL, and C#</li>
+                        <li>Proposed the use of SonarQube which resulted in fixing 30+ vulnerabilities, hotspots, and code smells</li>
+                        <li>Implemented and further optimized the Resource Hierarchy feature to display managers and direct reports</li>
+                        <li>Engaged in daily sprint meetings and weekly brainstorming sessions following the Scrum development process</li>
+                        <li>Improved soft skills through case studies, presentations, and working alongside Practice Leader Andrey</li>
+                    </ul>
+                </div>
+                <div class="line-break"></div>
+                <div class="card--work-history">
+                    <strong>🚧 RESEARCH ASSISTANT | MCMASTER UNIVERSITY</strong>
+                    <p>05/2021 - 08/2021</p>
+                    <ul>
+                        <li>Worked with Vice-Provost Dr. Hranilovic on 2 Android projects using Kotlin, SQLite, and Jetpack</li>
+                        <li>Analyzed 20+ IEEE research papers and presented 5 scientific reports with Matplotlib, Pandas, and SQL</li>
+                        <li>Wrote Python scripts to automate Excel operations, such as making Pivot Tables, saving 2+ hours/week</li>
+                        <li>Crowdfunded a Galaxy Tab S6 Lite and renovated a room with 4 LED lights to simulate real-world data</li>
+                        <li>Consulted with 25+ PhD researchers at the Free-Space Optical Communication Algorithms Laboratory</li>
+                        <li>Awarded the Dean's Excellence Engineering Research Experience Award and a $6000 research stipend</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section--page">
+                <h2>Projects</h2>
+                <div class="card--project">
+                    <a href="project0.html" target="_blank"><span>🏆 </span>Project Management DevOps Server</a>
+                </div>
+                <div class="card--project">
+                    <a href="project1.html" target="_blank"><span>🏆 </span>LaraGigs Job Listings</a>
+                </div>
+                <div class="card--project">
+                    <a href="project2.html" target="_blank"><span>🏆 </span>Goal Setter Dashboard</a>
+                </div>
+                <div class="card--project">
+                    <a href="project3.html" target="_blank"><span>🏆 </span>Open Weather App</a>
+                </div>
+                <div class="card--project">
+                    <a href="project4.html" target="_blank"><span>🏆 </span>Mumble Live Streaming Service</a>
+                </div>
+                <div class="card--project">
+                    <a href="project5.html" target="_blank"><span>🏆 </span>QR Code Generator</a>
+                </div>
+            </section>
+        </div>
+        <script src="js/theme.js"></script>
+    </body>
 </html>
